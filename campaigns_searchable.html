@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Media Activations</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .search-box { margin-bottom: 20px; }
+        .campaign { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; }
+        .tags { margin-top: 5px; }
+        .tag { display: inline-block; background-color: #eee; padding: 2px 6px; margin-right: 5px; border-radius: 4px; }
+        .image-preview { margin-top: 10px; height: 100px; background-color: #f0f0f0; text-align: center; line-height: 100px; color: #999; }
+    </style>
+</head>
+<body>
+    <h1>Creative Media Activations</h1>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search campaigns..." onkeyup="filterCampaigns()" style="width: 300px; padding: 5px;">
+    </div>
+    <div id="campaignList">
+
+    <div class="campaign" data-tags="AI,audio,retail" data-text="matalan ai audio ads matalan introduced ai-voiced audio creatives across radio and digital platforms, enabling hyper-localised messaging using generative ai.">
+        <h2>Matalan AI Audio Ads</h2>
+        <p>Matalan introduced AI-voiced audio creatives across radio and digital platforms, enabling hyper-localised messaging using generative AI.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>AI</span> <span class='tag'>audio</span> <span class='tag'>retail</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="sports,sponsorship,baby products" data-text="nuby x sunderland afc women nuby sponsors sunderland afc women, becoming the first baby brand to sponsor a football team, with a fan-voted 'player of the match' award.">
+        <h2>Nuby x Sunderland AFC Women</h2>
+        <p>Nuby sponsors Sunderland AFC Women, becoming the first baby brand to sponsor a football team, with a fan-voted 'Player of the Match' award.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>sports</span> <span class='tag'>sponsorship</span> <span class='tag'>baby products</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="retail,product innovation,commuter" data-text="ikea sleeping bag bag ikea launched a quilt-pocketed blue shopping bag inspired by sleep-deprived commuters in singapore, doubling as a nap accessory.">
+        <h2>IKEA Sleeping Bag Bag</h2>
+        <p>IKEA launched a quilt-pocketed blue shopping bag inspired by sleep-deprived commuters in Singapore, doubling as a nap accessory.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>retail</span> <span class='tag'>product innovation</span> <span class='tag'>commuter</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="OOH,food,experiential" data-text="taco bell meal deal campaign taco bell launched a playful campaign in london challenging boring sandwich meal deals using ooh, social, and digital media.">
+        <h2>Taco Bell Meal Deal Campaign</h2>
+        <p>Taco Bell launched a playful campaign in London challenging boring sandwich meal deals using OOH, social, and digital media.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>OOH</span> <span class='tag'>food</span> <span class='tag'>experiential</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="food,social media,installation" data-text="nando’s peri-ketchup launch nando’s launched peri-ketchup with a large installation in shoreditch and a social media competition.">
+        <h2>Nando’s Peri-Ketchup Launch</h2>
+        <p>Nando’s launched Peri-Ketchup with a large installation in Shoreditch and a social media competition.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>food</span> <span class='tag'>social media</span> <span class='tag'>installation</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="AR,gaming,telecom" data-text="ee game day ar campaign ee transformed uk locations into ar games connected via tiktok, fortnite, and twitch for its game day campaign.">
+        <h2>EE Game Day AR Campaign</h2>
+        <p>EE transformed UK locations into AR games connected via TikTok, Fortnite, and Twitch for its Game Day campaign.</p>
+        <p><strong>Source:</strong> Stuffed #200</p>
+        <div class="tags"><span class='tag'>AR</span> <span class='tag'>gaming</span> <span class='tag'>telecom</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="celebrity,politics,social media" data-text="taylor swift endorses kamala harris taylor swift endorsed kamala harris for us president, countering misinformation and encouraging voter engagement.">
+        <h2>Taylor Swift Endorses Kamala Harris</h2>
+        <p>Taylor Swift endorsed Kamala Harris for US President, countering misinformation and encouraging voter engagement.</p>
+        <p><strong>Source:</strong> Stuffed #201</p>
+        <div class="tags"><span class='tag'>celebrity</span> <span class='tag'>politics</span> <span class='tag'>social media</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="policy,health,advertising" data-text="uk junk food ad ban the uk government will ban junk food tv ads before 9pm starting october 2025 to combat obesity.">
+        <h2>UK Junk Food Ad Ban</h2>
+        <p>The UK government will ban junk food TV ads before 9pm starting October 2025 to combat obesity.</p>
+        <p><strong>Source:</strong> Stuffed #202</p>
+        <div class="tags"><span class='tag'>policy</span> <span class='tag'>health</span> <span class='tag'>advertising</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    <div class="campaign" data-tags="media,publishing,acquisition" data-text="gmg may sell the observer guardian media group is in talks to sell the observer to tortoise media, known for its slow journalism approach.">
+        <h2>GMG May Sell The Observer</h2>
+        <p>Guardian Media Group is in talks to sell The Observer to Tortoise Media, known for its slow journalism approach.</p>
+        <p><strong>Source:</strong> Stuffed #202</p>
+        <div class="tags"><span class='tag'>media</span> <span class='tag'>publishing</span> <span class='tag'>acquisition</span></div>
+        <div class="image-preview">[Image Preview Placeholder]</div>
+    </div>
+    
+    </div>
+    <script>
+        function filterCampaigns() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var campaigns = document.querySelectorAll('.campaign');
+            campaigns.forEach(function(campaign) {
+                var text = campaign.getAttribute('data-text');
+                var tags = campaign.getAttribute('data-tags');
+                if (text.includes(input) || tags.includes(input)) {
+                    campaign.style.display = '';
+                } else {
+                    campaign.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
